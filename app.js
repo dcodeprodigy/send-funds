@@ -73,12 +73,20 @@ function updatePaidContent() {
 
     // Count number of string characters.
     const newTxtArr = Array.from(newTxt);
+    console.log(newTxtArr);
     for (let i = 0; i < newTxtArr.length; i++) {
-
         let newSpan = document.createElement("span");
-        newSpan.innerHTML = newTxtArr[i];
-        txtContainer.appendChild(newSpan);
+
+        if (newTxtArr[i] === " "){
+            newSpan.innerHTML = "";
+            txtContainer.textContent += " ";
+            txtContainer.appendChild(newSpan);
+        } else {
+            newSpan.innerHTML = newTxtArr[i];
+            txtContainer.appendChild(newSpan);
+        }
         console.log(newSpan);
+        
 
 
     }
