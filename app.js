@@ -79,7 +79,7 @@ function updatePaidContent() {
 
         if (newTxtArr[i] === " "){
             newSpan.innerHTML = "";
-            txtContainer.textContent += " ";
+            txtContainer.innerHTML += " ";
             txtContainer.appendChild(newSpan);
         } else {
             newSpan.innerHTML = newTxtArr[i];
