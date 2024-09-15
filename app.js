@@ -37,6 +37,7 @@ function activateCloseModalCode(){
     // Display GIF
     sentBtn.addEventListener("click", ()=>{
         closeModal(modalOverlay, accountInfoModal);
+        updatePaidContent(); // thanks for sending
     });
 }
 
@@ -56,4 +57,25 @@ noBtn.addEventListener("click", ()=>{
 function closeModal(modalOverlay, accountInfoModal){
     accountInfoModal ? accountInfoModal.classList.add("hidden") : null;
     modalOverlay.classList.add("hidden");
+};
+
+function updatePaidContent(){
+    // Clear the letters container
+    const newTxt = "Thanks for saving me!"
+    const txtContainer = document.querySelector(".letters-container");
+    txtContainer.innerHTML = "";
+
+    // Count number of string characters.
+    const newTxtArr = Array.from(newTxt);
+    for (let i = 0; i < newTxtArr.length; i++){
+
+        let newSpan = document.createElement("span");
+        newSpan.innerHTML = newTxtArr[i];
+        txtContainer.appendChild(newSpan);
+        console.log(newSpan)
+        
+    }
+    
+    
+    // Thanks for saving me!
 }
