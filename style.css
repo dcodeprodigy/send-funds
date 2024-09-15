@@ -8,16 +8,14 @@ body, html{
     height: 100vh;
 }
 
+.hidden{
+    display: none;
+}
+
 section{
     align-items: center;
 }
 
 .letters-container{
-    font-size: clamp(40px, 8vw, 70px);
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-
+    font-size: clamp(33px, 8vw, 70px);
 }
