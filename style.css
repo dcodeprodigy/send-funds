@@ -89,6 +89,18 @@ section {
 .letters-container span:nth-child(17) {
   animation-delay: 740ms;
 }
+.letters-container span:nth-child(18) {
+  animation-delay: 740ms;
+}
+.letters-container span:nth-child(19) {
+  animation-delay: 740ms;
+}
+.letters-container span:nth-child(20) {
+  animation-delay: 740ms;
+}
+.letters-container span:nth-child(21) {
+  animation-delay: 740ms;
+}
 
 
 /* Animation for the Yes and No Buttons */
